@@ -18,7 +18,6 @@ services:
     environment:
       MONGO_URI: "mongodb+srv://Admin:Admin@cluster0.fo3ui.mongodb.net/url-shortener?retryWrites=true&w=majority&appName=Cluster0"
       BASE_URL: "https://shorten-url-api-ooxo.onrender.com"
-"
 
 volumes:
   mongo_data:
