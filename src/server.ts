@@ -46,7 +46,7 @@ app.use(bodyParser.json());
 
 mongoose
   .connect(
-    `${process.env.MONGO_URI}` || "mongodb://localhost:27017/url-shortener"
+    `${process.env.MONGO_URI || "mongodb://localhost:27017/url-shortener"}`
   )
   .then(() => console.log("Connected to MongoDB"))
   .catch((err: any) => console.error("Error connecting to MongoDB:", err));
